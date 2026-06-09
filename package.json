@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Express.js API demonstrating routing, middleware, and error handling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prthm45-kanha/Backend.git"
+  },
+  "keywords": [],
+  "author": "Pratham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prthm45-kanha/Backend/issues"
+  },
+  "homepage": "https://github.com/prthm45-kanha/Backend#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
