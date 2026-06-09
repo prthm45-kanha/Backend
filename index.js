@@ -4,11 +4,18 @@ const path=require('path');
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-app.use(express.static(path.join(__dirname,'publicc')));
-app.set('view engine','ejs');
 
+app.use(express.static(path.join(__dirname,'publicc')));
+
+app.set('view engine','ejs');
 app.get('/',(req,res)=>{
     res.render('index');
+}) 
+app.get('/profile/:username',(req,res)=>{
+    res.send(`welcome back,${req.params.username}`)
+})
+app.get('/profile/:kuchbhilikhskteh/:age',(req,res)=>{
+    res.send(`welcome back ${req.params.kuchbhilikhskteh} of age ${req.params.age}`)
 })
 app.listen(3000,()=>{
     console.log('Server is running on port 3000');
