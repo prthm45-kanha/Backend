@@ -4,13 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-<h1>HEY CHAMP <%= 4+4 %></h1>
+<div>
+    <div class="w-full main min-h-screen bg-zinc-900 ">
+
+       <div class="form text-white p-5">
+        <form  action="">
+            <input class="block w-full outline-none bg-zinc-800 rounded-md px-5 py-2 mt-2" type="text" placeholder="title goes here"/>
+            <textarea class="block w-full outline-none bg-zinc-800 rounded-md resize-none px-5 py-2 mt-2" placeholder="Write your task detail here"></textarea>
+            <input class="mt-2 px-5 py-2 bg-blue-600 rounded-md" type="submit" value="Create Task"/>
+        </form>
+
+       </div>
+
+       <div class="p-5 flex-wrap flex overflow-auto gap-4">
+
+        <div class="w-72 task hidden shrink-0 px-3 py-3 bg-zinc-800">
+            <h1 class="text-3xl text-white tracking-tighter">Some Task goes here</h1>
+            <a class="text-blue-500 inline-block mt-3" href="">Read More</a>
+        </div>
+
+        <div class="w-72 task hidden shrink-0 px-3 py-3 bg-zinc-800">
+            <h1 class="text-3xl text-white tracking-tighter">Some Task goes here</h1>
+            <a class="text-blue-500 inline-block mt-3" href="">Read More</a>
+        </div>
+
+        <div class="w-72 task hidden shrink-0 px-3 py-3 bg-zinc-800">
+            <h1 class="text-3xl text-white tracking-tighter">Some Task goes here</h1>
+            <a class="text-blue-500 inline-block mt-3" href="">Read More</a>
+        </div>
+        <h3 class="text-white"> No Tasks yet</h3>
+
+       </div>
+    </div>
+</div>
 
 
-<script src="/javascripts/scriptt.js"></script>
+
 </body>
 </html>
